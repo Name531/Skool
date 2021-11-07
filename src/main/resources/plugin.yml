@@ -1,0 +1,7 @@
+name: Skool
+version: '${project.version}'
+main: me.name.skool.Skool
+api-version: 1.17
+depend: [ Skript ]
+authors: [ Name ]
+description: A Skript Addon
