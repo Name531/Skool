@@ -2,7 +2,7 @@ package me.name.skool.elements.effects;
 
 import org.bukkit.entity.LivingEntity;
 import org.bukkit.event.Event;
-import org.jetbrains.annotation.Nullable;
+import org.jetbrains.annotations.Nullable;
 
 import ch.njol.skript.Skript;
 import ch.njol.skript.lang.Effect;
@@ -36,6 +36,6 @@ public class EffFreezeTicks extends Effect {
     protected void execute(Event event) {
         if (subject == null)  return;
         if (ticks == null) return;
-        subject.setFreezeTicks(ticks);
+        subject.getSingle(event).setFreezeTicks(ticks.getSingle(event));
     }
 }
